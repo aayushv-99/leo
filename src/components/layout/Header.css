@@ -3,5 +3,11 @@
 }
 
 .leo {
-  height: 10vmin;
+  height: 5vmin;
+  display: inline-block;
+}
+
+.navb .ml-auto .nav-link h4 {
+  color: #61dafb;
+  font-size: 40px;
 }

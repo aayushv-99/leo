@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Courgette&display=swap");
+
 .App {
   text-align: center;
-  padding: 230px 0;
+  padding: 160px 0;
   color: #61dafb;
   background-position: center;
   background-size: cover;
@@ -34,4 +36,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.om {
+  display: inline-block;
+  font-size: 50px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.le {
+  display: inline-block;
+  font-size: 50px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.cl {
+  display: inline-block;
+  font-size: 50px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.tagline1 {
+  font-family: "Courgette", cursive;
 }
