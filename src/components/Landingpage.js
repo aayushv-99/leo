@@ -1,13 +1,6 @@
 import React, { Component } from "react";
-import {
-  Grid,
-  Cell,
-  Footer,
-  FooterSection,
-  FooterDropDownSection,
-  FooterLinkList
-} from "react-mdl";
-import { Zoom, Bounce } from "react-reveal";
+import { Grid, Cell } from "react-mdl";
+import { Zoom, Flip, Fade, Roll } from "react-reveal";
 import { Container, Row, Col } from "react-bootstrap";
 import about from "./images/about.png";
 import mission from "./images/mission.png";
@@ -33,9 +26,9 @@ export class Landingpage extends Component {
                 </Zoom>
               </h1>
               <h4>
-                <Bounce left cascade>
+                <Flip left cascade>
                   <i>Together We Serve</i>
-                </Bounce>
+                </Flip>
               </h4>
               <div className="social-links">
                 {/* LinkedIn */}
@@ -59,86 +52,58 @@ export class Landingpage extends Component {
             </div>
           </Cell>
         </Grid>
-        <Container className="about-section">
-          <Row>
-            <Col>
-              <img alt="about" src={about} />
-              <span>
-                <h1>About Us</h1>
-                <p>
-                  Omega Leo Club is an integral part of the Lions family, Leos
-                  also have their own global network of over 6,500 Leo clubs in
-                  more than 140 nations. This international scope fosters a
-                  unique global identity among Leos and Lions. Leo clubs provide
-                  young people with an opportunity for development and
-                  contribution, individually and collectively, as responsible
-                  members of the local, national and international community.
-                </p>
-              </span>
-            </Col>
-          </Row>
-        </Container>
-        <Container className="mission-section">
-          <Row>
+        <Container fluid="True">
+          <Row id="about-section">
             <Col xs={6}>
-              <h1>Our Mission</h1>
-              <h5>
-                Through the Leo Club Program, young people develop and practice
-                leadership, organization and social skills <br /> through
-                participation in Leo club activities and service projects.
-                Involvement in these activities often fosters a <br /> lifetime
-                commitment to helping others, while enhancing the community.
-              </h5>
+              <Fade left>
+                <img alt="about" src={about} />
+              </Fade>
             </Col>
             <Col xs={6}>
-              <img alt="mission" src={mission} />
+              <h2>
+                <Roll left cascade>
+                  About Us
+                </Roll>
+              </h2>
+              <hr />
+              <p>
+                Omega Leo Club is an integral part of the Lions family, Leos
+                also have their own global network of over 6,500 Leo clubs in
+                more than 140 nations. This international scope fosters a unique
+                global identity among Leos and Lions. Leo clubs provide young
+                people with an opportunity for development and contribution,
+                individually and collectively, as responsible members of the
+                local, national and international community.
+              </p>
             </Col>
           </Row>
         </Container>
         <Container>
-          <Row>
-            <Col>
-              <Footer size="mega">
-                <FooterSection type="middle">
-                  <FooterDropDownSection title="Features">
-                    <FooterLinkList>
-                      <a href="/">About</a>
-                      <a href="/">Terms</a>
-                      <a href="/">Partners</a>
-                      <a href="/">Updates</a>
-                    </FooterLinkList>
-                  </FooterDropDownSection>
-                  <FooterDropDownSection title="Details">
-                    <FooterLinkList>
-                      <a href="/">Specs</a>
-                      <a href="/">Tools</a>
-                      <a href="/">Resources</a>
-                    </FooterLinkList>
-                  </FooterDropDownSection>
-                  <FooterDropDownSection title="Technology">
-                    <FooterLinkList>
-                      <a href="/">How it works</a>
-                      <a href="/">Patterns</a>
-                      <a href="/">Usage</a>
-                      <a href="/">Products</a>
-                      <a href="/">Contracts</a>
-                    </FooterLinkList>
-                  </FooterDropDownSection>
-                  <FooterDropDownSection title="FAQ">
-                    <FooterLinkList>
-                      <a href="/">Questions</a>
-                      <a href="/">Answers</a>
-                      <a href="/">Contact Us</a>
-                    </FooterLinkList>
-                  </FooterDropDownSection>
-                </FooterSection>
-                <FooterSection type="bottom" logo="Title">
-                  <FooterLinkList>
-                    <a href="/">Help</a>
-                    <a href="/">Privacy & Terms</a>
-                  </FooterLinkList>
-                </FooterSection>
-              </Footer>
+          <Row id="motto-section">
+            <Col xs={6}>
+              <Fade right>
+                <img alt="motto" src={mission} />
+              </Fade>
+              <Col xs={6}>
+                <h2>
+                  <Roll right cascade>
+                    Our Motto
+                  </Roll>
+                </h2>
+                <hr />
+                <p>
+                  The Leo club motto — Leadership, Experience, Opportunity —
+                  says it all: <br />
+                  <br /> LEADERSHIP: Leo members acquire skills as project
+                  organizers and motivators of their peers.
+                  <br />
+                  <br /> EXPERIENCE: They discover how teamwork and cooperation
+                  can bring about change in their community and the world.
+                  <br />
+                  <br /> OPPORTUNITY: Leos develop positive character traits and
+                  receive recognition for their contributions.
+                </p>
+              </Col>
             </Col>
           </Row>
         </Container>

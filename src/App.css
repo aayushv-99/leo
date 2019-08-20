@@ -77,41 +77,43 @@
 .social-links i {
   color: aquamarine;
   font-size: 5em;
-  padding: 8px;
+  padding: 2px;
 }
 
-.about-section {
-  padding: 4em;
-  display: flex;
+#about-section {
+  padding: 5em;
+  margin: auto;
 }
 
-.about-section img {
+#about-section img {
+  padding-right: 5em;
   width: 30%;
-  display: inline-block;
+  float: left;
 }
 
-.about-section h1 {
-  text-align: right;
-  display: inline-block;
+#about-section h2 {
+  text-align: center;
 }
 
-.about-section p {
-  text-align: right;
-  display: inline-block;
+#about-section p {
+  text-align: center;
 }
 
-.mission-section {
-  padding: 4em;
+#motto-section {
+  padding: 5em;
+  margin: auto;
 }
 
-.mission-section img {
+#motto-section img {
+  padding-left: 5em;
   width: 30%;
+  float: right;
 }
 
-.mission-section h1 {
-  text-align: left;
+#motto-section h2 {
+  text-align: center;
 }
 
-.mission-section h4 {
+#motto-section p {
   text-align: left;
 }

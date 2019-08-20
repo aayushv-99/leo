@@ -11,7 +11,7 @@ function App() {
         <Header
           className="header-color"
           transparent
-          title="Omega Leo Club"
+          title="   "
           style={{ color: "white" }}
         >
           <Navigation>
@@ -22,7 +22,7 @@ function App() {
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="LEO">
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/team">Team</Link>
